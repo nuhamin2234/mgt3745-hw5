@@ -5,17 +5,17 @@ The living feature table and the verification record. Copy in from HW3 and exten
 ## Features
 
 | Feature | Kano | Status |
-|---|---|---|
+| Edit a note | Performance | Delegated to bolt.new (HW5) |
 | *Save and list entries* | *Basic* | *Built (HW3), server-backed (HW4)* |
 | *...* | | |
 
 ## Acceptance criteria (EARS)
 
-- THE SYSTEM SHALL return all entries in creation order.
-- WHEN a valid entry is submitted, THE SYSTEM SHALL store it and confirm.
-- IF the entry text is missing, THEN THE SYSTEM SHALL reject it and say why.
-- IF the server cannot be reached, THEN THE SYSTEM SHALL tell the user on the page.
-- *Add the unwanted-behavior statement your HW4 validation rule implements.*
+- E1: WHEN the user saves an edited note, THE SYSTEM SHALL update the stored text and show the new text on the page.
+- E2: IF the edited text is empty, THEN THE SYSTEM SHALL reject it with a reason and keep the old text.
+- E3: IF the note does not exist, THEN THE SYSTEM SHALL respond 404 with a reason.
+- E4: IF the server cannot be reached while saving an edit, THEN THE SYSTEM SHALL show an error on the page and keep the original text.
+- E5: THE SYSTEM SHALL return the edited text from GET /entries on any device.
 
 ## Verification
 
