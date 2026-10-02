@@ -6,8 +6,7 @@ The living feature table and the verification record. Copy in from HW3 and exten
 
 | Feature | Kano | Status |
 | Edit a note | Performance | Delegated to bolt.new (HW5) |
-| *Save and list entries* | *Basic* | *Built (HW3), server-backed (HW4)* |
-| *...* | | |
+
 
 ## Acceptance criteria (EARS)
 
